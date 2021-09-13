@@ -1,12 +1,16 @@
 import { Navbar,Nav,NavDropdown, Container } from 'react-bootstrap'
 import CartNav from '../CartNav/CartNav';
 import './NavBar.css'
+
+
+
+
 const  Navbarx = () => {
   return (
     <div>
       <Navbar id="colorNav" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">NOMBRE ECOMMERCE</Navbar.Brand>
+          <Navbar.Brand href="#home">NOMBRE ECOMMERCE </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

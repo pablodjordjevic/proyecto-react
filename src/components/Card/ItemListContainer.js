@@ -1,6 +1,6 @@
 import { Card, Button } from 'react-bootstrap';
 import './Card.css'
-
+import ItemCount from '../ItemCount/ItemCount';
 
 const ItemListContainer = (props) => {
   console.log(props)
@@ -14,6 +14,7 @@ const ItemListContainer = (props) => {
             <Card.Text>
             <span> {props.description} </span>
             </Card.Text>
+            <ItemCount/>
             <Button className="Button" variant="primary">AGREGAR CARRITO</Button>
           </Card.Body>
         </Card>

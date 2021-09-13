@@ -1,6 +1,8 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHeart, faShoppingCart,faUser } from '@fortawesome/free-solid-svg-icons';
 import './CartNav.css'
+
+
 function CartNav() {
 return (
   <div className="iconoCart">
