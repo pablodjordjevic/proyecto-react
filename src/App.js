@@ -1,3 +1,4 @@
+import { Container, Row} from 'react-bootstrap';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbarx from './components/NavBar/Navbarx';
@@ -10,14 +11,12 @@ function App() {
     <div className="App">
       <header>
         <Navbarx />
-        <div className="">
-          
+        <Container>       
+        <Row className="g-4">
           {/* PRODUCTOS CARDS */}
-          <ItemListContainer
-          id="Producto 1"
-          src={logo}
-          description="Descripcion del producto 1"/>
-        </div>  
+          <ItemListContainer/>
+        </Row>
+        </Container>  
       </header>
       
     </div>
