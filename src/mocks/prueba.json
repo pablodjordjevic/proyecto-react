@@ -1,0 +1,47 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "title": "Base Eterna",
+      "description": "Esta es la descripción del producto 0",
+      "price": 250,
+      "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/893/990/products/base-acrilica-eterna-x-200-ml-32-colores-para-elegir-x-12-u-d_nq_np_828520-mla31642636519_072019-f1-9bee3693d974317cca15840206949109-480-0.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Pinceles",
+      "description": "Esta es la descripción del producto 1",
+      "price": 200,
+      "image": "https://m.media-amazon.com/images/I/614LWQwmFlL._AC_SX425_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Arcilla",
+      "description": "Esta es la descripción del producto 2",
+      "price": 450,
+      "image": "https://http2.mlstatic.com/D_NQ_NP_849381-MLA45688649201_042021-V.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Cintas",
+      "description": "Esta es la descripción del producto 3",
+      "price": 500,
+      "image": "http://www.laguiadeberazategui.com.ar/uploads/imagenes/clasificados/347/galeria/800x600/141120033649936905.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Pintura para tela",
+      "description": "Esta es la descripción del producto 4",
+      "price": 220,
+      "image": "https://tince.com.ar/wp-content/uploads/2020/05/pintura-para-tela-eterna-x37ml-17828-D_NQ_NP_781861-MLA25704396331_062017-F.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Bochas telgopor",
+      "description": "Esta es la descripción del producto 5",
+      "price": 200,
+      "image": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/245/767/products/991081-0e8e6371100cd3ca4916004427260792-640-0.jpg"
+    }
+    
+  ]
+}

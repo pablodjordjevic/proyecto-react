@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Card, Button, Col } from 'react-bootstrap';
 import './Card.css'
 import ItemCount from '../ItemCount/ItemCount';
@@ -5,85 +6,53 @@ import { Fragment } from 'react';
 
 
 
+
 const ItemListContainer = () => {
-  
-  const arrayProductos = [
-    {
-      id : 1,
-      nombre: "Headset Logitech G PRO X",
-      img : "../../image/logo/logo.svg",
-      precio : "25000",
-    },
-  
-    {
-      id : 2,
-      nombre: "Gabinete Asus TUF",
-      img : "../../image/logo/logo.svg",
-      precio : "23000",
-    },
-  
-    {
-      id : 3,
-      nombre: "Mouse Glorius Model O",
-      img : "../../image/logo/logo.svg",
-      precio : "7500",
-    },
 
-    {
-      id : 4,
-      nombre: "Teclado Steelseries Apex",
-      img : "../../image/logo/logo.svg",
-      precio : "32000",
-    },
+  const [data, setData] = React.useState ([]);
+  const [loading, setLoading] = React.useState (false);
+  const [error, setError] = React.useState (null);
+
+  React.useEffect(() => {
+    const url =  "http://localhost:3001/products";
+
+    setLoading(true);
+    fetch(url)
+      .then((respuesta) => {
+        if (respuesta.ok) {
+          return respuesta.json();
+        } else {
+          throw respuesta;
+        }
+      })
+      .then((data) => setData(data))
+      .catch((error) => setError(error))
+      .finally(() => setLoading(false));
+  }, []);
+
   
-    {
-      id : 5,
-      nombre: "Mouse G-Wolves SKOLL",
-      img : "../../image/logo/logo.svg",
-      precio : "12000",
-    },
-  
-    {
-      id : 6,
-      nombre: "Notebook Razer Blade",
-      img : "../../image/logo/logo.svg",
-      precio : "250000",
-    },
+    
 
-  ];
-  
-  const getProductos = function(){
-    return new Promise (function(res){
-      setTimeout(function(){
-        res(arrayProductos)
-      }, 2000)
-    })
-  }
-
-  getProductos().then(function(res){
-    console.log(res);
-  })
-
-
-
-  return (
-      <Fragment>
-        {arrayProductos.map((productos) => {
-        return <Col key={productos.id} className="box" sm="12" md="6" lg="4">
-          <Card>
-            <Card.Img variant="top" src={productos.img} />
-            <Card.Body>
-              <Card.Title>{productos.nombre}</Card.Title>
-              <Card.Text>
-              <span> $ {productos.precio} </span>
-              </Card.Text>
-              <ItemCount/>
-              <Button className="Button" variant="primary">AGREGAR CARRITO</Button>
-            </Card.Body>
-          </Card>
-          </Col>
-          } )}
-      </Fragment>
+    return (
+        <Fragment>
+          {loading && <p>Cargando...</p>}
+          {error && <p> ERROR </p>}
+          {data?.map((productos) => {
+          return <Col key={productos.id} className="box" sm="12" md="6" lg="4">
+            <Card>
+              <Card.Img variant="top"  src={productos.image} />
+              <Card.Body>
+                <Card.Title>{productos.title}</Card.Title>
+                <Card.Text>
+                <span> $ {productos.price} </span>
+                </Card.Text>
+                <ItemCount/>
+                <Button className="Button" variant="primary">AGREGAR CARRITO</Button>
+              </Card.Body>
+            </Card>
+            </Col>
+            } )}
+        </Fragment>
 
 )
 }

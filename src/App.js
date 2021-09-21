@@ -1,25 +1,22 @@
-import { Container, Row} from 'react-bootstrap';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbarx from './components/NavBar/Navbarx';
-import ItemListContainer from './components/Card/ItemListContainer';
-import logo from './image/logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Shop from './pages/Shop';
+import ItemDetail from './pages/ItemDetail';
 
 
 function App() {
   return (
-    <div className="App">
-      <header>
+    <BrowserRouter>
         <Navbarx />
-        <Container>       
-        <Row className="g-4">
-          {/* PRODUCTOS CARDS */}
-          <ItemListContainer/>
-        </Row>
-        </Container>  
-      </header>
-      
-    </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/shop" component={Shop} />
+          <Route exact path="/itemdetail" component={ItemDetail} />
+        </Switch>
+    </BrowserRouter>
   );
 }
 

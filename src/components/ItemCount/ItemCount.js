@@ -1,15 +1,14 @@
 import {useState} from 'react'
 
 const ItemCount = () => {
-  const [counter, setCounter] = useState(1);
-  
-  const incrementar = () => {
-    setCounter(counter + 1);
+const [counter, setCounter] = useState(1);
+
+const incrementar = () => {
+  setCounter(counter + 1);
   }
 
   const descrementar = () => {
     setCounter(counter -1);
-
   }
 
   return(
