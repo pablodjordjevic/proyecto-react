@@ -1,13 +1,12 @@
 import * as React from "react";
 import { Card, Button, Col } from 'react-bootstrap';
-import './Card.css'
-import ItemCount from '../ItemCount/ItemCount';
+
 import { Fragment } from 'react';
 
 
 
 
-const ItemListContainer = () => {
+const ProductsCard = () => {
 
   const [data, setData] = React.useState ([]);
   const [loading, setLoading] = React.useState (false);
@@ -42,12 +41,13 @@ const ItemListContainer = () => {
             <Card>
               <Card.Img variant="top"  src={productos.image} />
               <Card.Body>
-                <Card.Title>{productos.title}</Card.Title>
-                <Card.Text>
+                <Card.Title className="titleCard">{productos.title}</Card.Title>
+                <Card.Text className="precioCard">
+                <p> {productos.description} </p>
                 <span> $ {productos.price} </span>
                 </Card.Text>
-                <ItemCount/>
-                <Button className="Button" variant="primary">AGREGAR CARRITO</Button>
+                {/* <ItemCount/> */}
+                <Button className="buttonCard" >Agregar</Button>
               </Card.Body>
             </Card>
             </Col>
@@ -56,7 +56,7 @@ const ItemListContainer = () => {
 
 )
 }
-export default ItemListContainer;
+export default ProductsCard;
 
 
 

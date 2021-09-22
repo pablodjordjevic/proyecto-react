@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Fragment } from 'react';
 import { Card, Button, Col } from 'react-bootstrap';
-
+import './ItemDetailContainer.css'
 
 const ItemDetailContainer = () => {
   
@@ -33,18 +33,21 @@ const ItemDetailContainer = () => {
           {loading && <p>Cargando...</p>}
           {error && <p> ERROR </p>}
           {data?.map((productos) => {
-            return <Col key={productos.id} className="box" sm="12" md="6" lg="4">
+            return  <div className="itemDetailContainer-container">
+              <Col key={productos.id} className="box" sm="12" md="6" lg="4">
             <Card>
-            <Card.Img variant="top" src={productos.image} />
-            <Card.Body>
-              <Card.Title>{productos.title}</Card.Title>
-              <Card.Text>
+            <Card.Img variant="top" src={productos.image} /> 
+            <Card.Body> 
+              <Card.Title className="titleItemDetail">{productos.title}</Card.Title>
+              <Card.Text className="detalleItemDetail">
                 {productos.description}
               </Card.Text>
-              <Button variant="primary">COMPRAR</Button>
+              <Button className="buttonItemDetail" variant="primary">COMPRAR</Button>
             </Card.Body>
           </Card>
+          
           </Col>
+          </div>
       } )} 
       </Fragment>
 

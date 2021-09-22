@@ -1,0 +1,51 @@
+.card{
+  border: none;
+}
+.cardDiv {
+  margin: 10px;
+  display:flex;
+  justify-content: center;
+  
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+
+}
+
+.titleCard {
+  text-align: center;
+  padding-bottom: 5px;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.precioCard {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.buttonCard {
+  background-color: transparent;
+  color:black;
+  border-radius: 5px ;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block!important;
+  border: none!important;
+  transition-duration: 0.6s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.buttonCard:hover {
+  background-color: transparent!important;
+  color: black;
+}

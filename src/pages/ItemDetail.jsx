@@ -9,13 +9,11 @@ import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailCon
 
 
 function ItemDetail() {
- 
-
-
-
   return(
     <Fragment>
+      
       <ItemDetailContainer/>
+      
     </Fragment>
   )
 }

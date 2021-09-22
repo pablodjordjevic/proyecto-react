@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/itemdetail" component={ItemDetail} />
         </Switch>
     </BrowserRouter>
+    
   );
 }
 

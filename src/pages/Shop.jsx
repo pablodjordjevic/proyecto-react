@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import ItemListContainer from '../components/Card/ItemListContainer';
+import ItemListContainer from '../components/ItemListContainer/ItemListContainer';
 import { Container, Row } from 'react-bootstrap';
 
 function Shop() {
