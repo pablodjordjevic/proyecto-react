@@ -18,7 +18,6 @@ const  Navbarx = () => {
             <Nav>
               <Link className="nav-link" to="/">Home</Link>
               <Link className="nav-link" to="/Shop">Shop</Link>
-              <Link className="nav-link" to="/itemdetail">ItemDetail</Link>
             </Nav>
           </Navbar.Collapse>
           <CartNav />

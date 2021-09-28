@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Card, Button, Col } from 'react-bootstrap';
-
 import { Fragment } from 'react';
-
+import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
 
 
 
@@ -38,6 +38,7 @@ const ProductsCard = () => {
           {error && <p> ERROR </p>}
           {data?.map((productos) => {
           return <Col key={productos.id} className="box" sm="12" md="6" lg="4">
+            
             <Card>
               <Card.Img variant="top"  src={productos.image} />
               <Card.Body>
@@ -46,10 +47,13 @@ const ProductsCard = () => {
                 <p> {productos.description} </p>
                 <span> $ {productos.price} </span>
                 </Card.Text>
-                {/* <ItemCount/> */}
-                <Button className="buttonCard" >Agregar</Button>
+                
+                <Link to={`/ItemDetailContainer/${productos.id}`} >
+                <Button className="buttonCard">Ver mas</Button>
+                </Link>
               </Card.Body>
             </Card>
+            
             </Col>
             } )}
         </Fragment>

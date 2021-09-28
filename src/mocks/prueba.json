@@ -5,6 +5,7 @@
       "title": "Base Eterna",
       "description": "Esta es la descripción 0",
       "price": 250,
+      "stock": 15,
       "image": "https://scontent.faep22-1.fna.fbcdn.net/v/t1.6435-9/121013250_3501906703165636_2284198590523648100_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=973b4a&_nc_ohc=Men9vOjlGZgAX9wFJHu&_nc_ht=scontent.faep22-1.fna&oh=be720591fe95459ef1e55cdab5246ddc&oe=6170E4C8"
     },
     {
@@ -12,6 +13,7 @@
       "title": "Pinceles",
       "description": "Esta es la descripción 1",
       "price": 200,
+      "stock": 10,
       "image": "https://scontent.faep22-1.fna.fbcdn.net/v/t1.6435-9/121013250_3501906703165636_2284198590523648100_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=973b4a&_nc_ohc=Men9vOjlGZgAX9wFJHu&_nc_ht=scontent.faep22-1.fna&oh=be720591fe95459ef1e55cdab5246ddc&oe=6170E4C8"
     },
     {
@@ -19,6 +21,7 @@
       "title": "Arcilla",
       "description": "Esta es la descripción 2",
       "price": 450,
+      "stock": 5,
       "image": "https://scontent.faep22-1.fna.fbcdn.net/v/t1.6435-9/121013250_3501906703165636_2284198590523648100_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=973b4a&_nc_ohc=Men9vOjlGZgAX9wFJHu&_nc_ht=scontent.faep22-1.fna&oh=be720591fe95459ef1e55cdab5246ddc&oe=6170E4C8"
     },
     {
@@ -26,6 +29,7 @@
       "title": "Cintas",
       "description": "Esta es la descripción 3",
       "price": 500,
+      "stock": 7,
       "image": "https://scontent.faep22-1.fna.fbcdn.net/v/t1.6435-9/121013250_3501906703165636_2284198590523648100_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=973b4a&_nc_ohc=Men9vOjlGZgAX9wFJHu&_nc_ht=scontent.faep22-1.fna&oh=be720591fe95459ef1e55cdab5246ddc&oe=6170E4C8"
     },
     {
@@ -33,6 +37,7 @@
       "title": "Pintura para tela",
       "description": "Esta es la descripción 4",
       "price": 220,
+      "stock": 2,
       "image": "https://scontent.faep22-1.fna.fbcdn.net/v/t1.6435-9/121013250_3501906703165636_2284198590523648100_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=973b4a&_nc_ohc=Men9vOjlGZgAX9wFJHu&_nc_ht=scontent.faep22-1.fna&oh=be720591fe95459ef1e55cdab5246ddc&oe=6170E4C8"
     },
     {
@@ -40,6 +45,7 @@
       "title": "Bochas telgopor",
       "description": "Esta es la descripción 5",
       "price": 200,
+      "stock": 12,
       "image": "https://scontent.faep22-1.fna.fbcdn.net/v/t1.6435-9/121013250_3501906703165636_2284198590523648100_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=973b4a&_nc_ohc=Men9vOjlGZgAX9wFJHu&_nc_ht=scontent.faep22-1.fna&oh=be720591fe95459ef1e55cdab5246ddc&oe=6170E4C8"
     }
     

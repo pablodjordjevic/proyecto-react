@@ -1,24 +1,30 @@
 import {useState} from 'react'
 
-const ItemCount = () => {
-const [counter, setCounter] = useState(1);
+function ItemCount({stock, initial, onAdd}) {
+    const [count, setCount] = useState(initial);
 
-const incrementar = () => {
-  setCounter(counter + 1);
-  }
-
-  const descrementar = () => {
-    setCounter(counter -1);
-  }
-
-  return(
-      <div> 
-        <p>STOCK: {counter}</p>
-        <button onClick={descrementar}>-</button>
-        <button onClick={incrementar}>+</button>
-      </div>
-  );
-}
+    onAdd = stock;
+    
+    if (count > stock){
+        setCount(initial);
+    } 
+    if (count === (initial-1)){
+        setCount(initial);
+    }
+    if(onAdd > 0) {
+        return(
+            <div className="app">
+                <h1>{count}</h1>
+                <div className="button-wrapper">
+                    <button onClick = { ()=> setCount(Math.max(count-1)) }>-</button>
+                    <button onClick = { ()=> setCount(Math.max(count+1)) }>+</button>
+                </div>
+            </div>
+        )
+    } else if(onAdd === 0){
+        alert("No quedo stock");
+    }
+    }
 
 export default ItemCount;
 
