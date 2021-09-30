@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 
 
 
-const ProductsCard = () => {
+const ProductsCard = ({seleccionCategoria}) => {
 
   const [data, setData] = React.useState ([]);
   const [loading, setLoading] = React.useState (false);
   const [error, setError] = React.useState (null);
 
   React.useEffect(() => {
-    const url =  "http://localhost:3001/products";
+    const url = seleccionCategoria ? `http://localhost:3001/products?categoria=${seleccionCategoria}` : `http://localhost:3001/products`;
 
     setLoading(true);
     fetch(url)
@@ -27,7 +27,7 @@ const ProductsCard = () => {
       .then((data) => setData(data))
       .catch((error) => setError(error))
       .finally(() => setLoading(false));
-  }, []);
+  }, [seleccionCategoria]);
 
   
     
@@ -53,7 +53,6 @@ const ProductsCard = () => {
                 </Link>
               </Card.Body>
             </Card>
-            
             </Col>
             } )}
         </Fragment>
